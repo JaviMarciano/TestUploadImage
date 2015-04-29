@@ -1,0 +1,6 @@
+﻿@using (Html.BeginForm("Guardar", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.EditorForModel()
+    <input type="file" name="Imagen" />
+    <input type="submit" value="OK" />
+}
